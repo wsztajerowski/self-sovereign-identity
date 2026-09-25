@@ -1,0 +1,17 @@
+{
+  "name": "self-sovereign-identity-slides",
+  "private": true,
+  "scripts": {
+    "dev": "slidev",
+    "build": "slidev build",
+    "export": "slidev export --output slides.pdf",
+    "shots": "slidev export --format png --output .shots"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.49.29",
+    "@slidev/theme-default": "latest"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.63.0"
+  }
+}

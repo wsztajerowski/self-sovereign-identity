@@ -1,0 +1,151 @@
+/*
+ * The reveal.js "moon" theme the deck was originally presented with,
+ * recreated for Slidev: Solarized base03 background, League Gothic uppercase
+ * headings, Lato body text, and every slide centred on both axes.
+ */
+
+:root {
+  --moon-bg: #002b36;
+  --moon-bg-raised: #073642;
+  --moon-text: #93a1a1;
+  --moon-heading: #eee8d5;
+  --moon-link: #268bd2;
+  --moon-link-hover: #78b9e6;
+  --moon-accent: #d33682;
+
+  --slidev-theme-primary: var(--moon-link);
+  --slidev-code-font-size: 20px;
+  --slidev-code-line-height: 1.4;
+}
+
+.slidev-layout {
+  background: var(--moon-bg);
+  color: var(--moon-text);
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  line-height: 1.3;
+  padding: 36px 56px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.slidev-layout h1 {
+  font-family: 'League Gothic', 'Impact', sans-serif;
+  color: var(--moon-heading);
+  text-transform: uppercase;
+  font-size: 68px;
+  line-height: 1.1;
+  letter-spacing: normal;
+  font-weight: normal;
+  margin: 0 0 24px;
+}
+
+/* Title slide and the title-only section slides between the stories. */
+.slidev-layout.title-slide h1 {
+  font-size: 150px;
+}
+
+.slidev-layout.section h1 {
+  font-size: 96px;
+  margin: 0;
+}
+
+.slidev-layout p,
+.slidev-layout li {
+  line-height: 1.35;
+}
+
+/* The default theme fades and pulls up the paragraph after a heading. */
+.slidev-layout p,
+.slidev-layout h1 + p {
+  margin: 12px 0;
+  opacity: 1;
+}
+
+.slidev-layout a {
+  color: var(--moon-link);
+  text-decoration: none;
+}
+
+.slidev-layout a:hover {
+  color: var(--moon-link-hover);
+}
+
+/* reveal.js keeps lists as a left-aligned block inside the centred slide. */
+.slidev-layout ul,
+.slidev-layout ol {
+  display: inline-block;
+  text-align: left;
+  margin: 12px 0 0;
+}
+
+.slidev-layout li {
+  margin: 6px 0;
+}
+
+.slidev-layout .no-dots ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+.slidev-layout dl {
+  text-align: left;
+  max-width: 1000px;
+}
+
+.slidev-layout dt {
+  font-weight: bold;
+  color: var(--moon-heading);
+  margin-top: 16px;
+}
+
+.slidev-layout dd {
+  margin-left: 40px;
+}
+
+/* Images keep reveal's framed look and shrink to fit what the heading leaves. */
+.slidev-layout img.figure {
+  max-width: 95%;
+  max-height: 440px;
+  margin: 8px auto 0;
+  border: 4px solid var(--moon-text);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  object-fit: contain;
+}
+
+.slidev-layout img.figure.wide {
+  max-width: 100%;
+  max-height: 480px;
+}
+
+.slidev-layout img.figure.full {
+  max-height: 600px;
+}
+
+/* Code: reveal's floating block with a dark background. */
+.slidev-layout .slidev-code-wrapper {
+  text-align: left;
+  width: 90%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.slidev-layout pre.slidev-code {
+  background: var(--moon-bg-raised) !important;
+}
+
+.slidev-layout .mermaid {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.slidev-layout .katex {
+  font-size: 1.05em;
+  color: var(--moon-heading);
+}

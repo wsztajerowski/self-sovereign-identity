@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+._*
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*~
+
+# Node.js
+node_modules/
+npm-debug.log*
+
+# Slidev build output
+dist/
+.slidev/
+.vite/
+
+# Exported presentation files (the PDF is built in CI, never committed)
+*.pdf
+*.pptx
+
+# Slide screenshots used for visual verification
+slides/.shots/
