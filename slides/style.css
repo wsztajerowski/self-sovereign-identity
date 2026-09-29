@@ -149,3 +149,12 @@
   font-size: 1.05em;
   color: var(--moon-heading);
 }
+
+/* Slidev 0.49 "closes" the goto dialog (g) by moving it only 80px above the
+   viewport, so any results list left in it hangs down the right edge. That
+   happens whenever an empty search matches everything, as fuse.js 7.5.0 does
+   (package.json pins 7.1.0). Hide the closed dialog outright, whatever the
+   library version. */
+#slidev-goto-dialog.-top-20 {
+  visibility: hidden;
+}
